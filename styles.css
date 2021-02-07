@@ -1,0 +1,177 @@
+body
+{
+    background: salmon;
+    font-family: "Kumbh Sans";
+    font-size: 12px;
+    background: linear-gradient(to bottom,hsl(273, 75%, 66%),hsl(240, 73%, 65%)) no-repeat center center/cover;
+    color: hsl(238, 29%, 16%);
+    min-height: 650px;
+}
+.attribution{
+    margin-top: 20px;
+}
+.container {
+    min-height: 100vh;
+    height: auto    ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    
+    display: flex;
+    width: 80%;
+    height: auto;
+    gap: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 10px 1px rgba(0, 0, 0, 0.13);
+    padding: 20px;
+}
+.img   {
+    width: 40%;
+    background: url(./images/bg-pattern-desktop.svg) no-repeat;
+    background-size: cover;
+    
+    
+    justify-content: center;
+}
+
+.faq{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        height: auto;
+}
+.ans{
+    width: 90%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+
+}
+p.show{
+    /* position: absolute; */
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+   
+    
+     
+    
+   
+}
+.active, .quest:hover {
+    
+    color:hsl(14, 88%, 65%) ;
+    
+  }
+.girl{
+    max-width: 500px;
+    width: 50%;
+    position: absolute;
+    top: auto;
+    left: 5%;
+}
+.box{
+    max-width: 200px;
+position:absolute;
+width: 20%;
+
+top: auto;
+left: 4%;
+
+ 
+
+}
+.btn{
+    width: 20px;
+    height: 13px;
+    border-radius: 2px;
+    background: white   url(./images/icon-arrow-down.svg) no-repeat ;
+    background-size: cover;
+    margin-left: 5px;
+}
+h2{
+    display: flex;
+    align-items: center;
+}
+.q{
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    overflow: hidden;
+}
+.q h2:hover{
+    color: coral;
+}
+@media(max-width:1200px)
+{
+    
+    .card{
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    .faq{
+        width: 100%;
+       
+    }
+    .img{
+        width: 100%;
+        min-height: 100px;
+        height: 20vw;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background: url(./images/bg-pattern-mobile.svg) no-repeat;
+        background-position-x: center;
+        background-size: 60%;
+        
+    }
+    .girl{
+        top: 0%;
+        left: 25%;
+    }
+    
+    .box{
+        top: 10%;
+        left: 23%;
+
+    }
+    .q,h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: baseline;
+
+    }
+    h2{
+        
+        text-align: center;
+    }
+}
+@media(max-width:700px){
+    .girl{
+         top: 15%;
+       
+    }
+    
+    .box{
+        top: 25%;
+        left: 23%;
+
+    }
+}
+@media(max-width:700px){
+    .girl{
+        top: 20%;
+      
+   }
+   
+   .box{
+       top: 28%;
+       left: 23%;
+
+   }
+}
